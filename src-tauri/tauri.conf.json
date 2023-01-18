@@ -12,10 +12,13 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": [
+          "https://bookerapi.up.railway.app/",
+          "https://bookerapi.up.railway.app/*"
+        ]
       }
     },
     "bundle": {

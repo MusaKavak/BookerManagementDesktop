@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../components/Home.vue";
-import NotFound from "../components/NotFound.vue";
+import Home from "../components/home.vue";
+import NotFound from "../components/notFound.vue";
+import EmployeeManagement from "../components/management-pages/employeeManagement.vue";
 
 const routes: RouteRecordRaw[] = [
-    { path: "/home", component: Home },
+    { path: "/", component: Home },
+    { path: "/employees", component: EmployeeManagement },
     { path: '/:pathMatch(.*)', component: NotFound }
 ]
 
